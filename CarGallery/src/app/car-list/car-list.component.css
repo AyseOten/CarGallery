@@ -1,0 +1,44 @@
+.container {
+    padding:10px 10px 10px 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 350px);
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+    height: 1000px;
+
+}
+nav a {
+    position: absolute;
+    right:10px;
+    padding: 10px;
+    margin-top: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-bottom: 10px;
+    background-color: #eee;
+    border-radius: 4px;
+  }
+  nav a:visited, a:link {
+    color: #334953;
+  }
+  nav a:hover {
+    color: #039be5;
+    background-color: #cfd8dc;
+  }
+  nav a.active {
+    color: #039be5;
+  }
+  .car-list img{
+    width: 470px;
+    height: 350px;
+    border:2px solid #fff;
+
+    -moz-box-shadow: 10px 10px 5px #ccc;
+    -webkit-box-shadow: 10px 10px 5px #ccc;
+    box-shadow: 10px 10px 5px #ccc;
+    -moz-border-radius:25px;
+    -webkit-border-radius:25px;
+    border-radius:25px;
+
+}

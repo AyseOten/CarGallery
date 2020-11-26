@@ -1,0 +1,42 @@
+<div class="container">
+    <form [formGroup]="carForm" (ngSubmit)="onSubmit()">
+        <div class="inputs">
+            <label>
+                Car Name:
+                <input type="text" formControlName="name" required>
+            </label>
+        </div>
+
+        <div  class="inputs">
+            <label>
+                Car Price($):
+                <input type="text" formControlName="price" required>
+            </label>
+        </div>
+
+        <div  class="inputs">
+            <label>
+                Car Type:
+                <input type="text" formControlName="type">
+            </label>
+        </div>
+        
+        <div  class="inputs">
+            <label>
+                Photo URL:
+                <input type="text" formControlName="photo">
+            </label>
+        </div>
+
+        <div  class="inputs">
+            <button type="submit" [disabled]="!carForm.valid" (click)="displayDiv()">Add Car</button>
+        </div>
+    </form>
+
+    <!-- <p>Form status: {{carForm.status}}</p> -->
+
+    <!-- <div *ngIf="infoDiv">
+        Araba başarıyla eklendi.
+    </div> -->
+
+</div>
